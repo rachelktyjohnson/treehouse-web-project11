@@ -2,6 +2,7 @@ import './App.css';
 import Nav from './components/Nav';
 import SearchForm from "./components/SearchForm";
 import PhotoContainer from "./components/PhotoContainer";
+import {apiKey} from './config';
 
 function App() {
     return (
@@ -9,8 +10,6 @@ function App() {
             <SearchForm></SearchForm>
             <Nav></Nav>
             <PhotoContainer></PhotoContainer>
-
-
         </div>
     );
 }
