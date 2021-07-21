@@ -1,15 +1,19 @@
 import './App.css';
-import Nav from './components/Nav';
-import SearchForm from "./components/SearchForm";
-import PhotoContainer from "./components/PhotoContainer";
-import {apiKey} from './config';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import Header from "./components/Header";
+import Home from "./components/Home";
+import PageNotFound from "./components/PageNotFound";
 
 function App() {
     return (
         <div className="container">
-            <SearchForm></SearchForm>
-            <Nav></Nav>
-            <PhotoContainer></PhotoContainer>
+            <BrowserRouter>
+                <Header/>
+                <Switch>
+                    <Route exact path="/" component={Home}/>
+                    <Route component={PageNotFound}/>
+                </Switch>
+            </BrowserRouter>
         </div>
     );
 }
