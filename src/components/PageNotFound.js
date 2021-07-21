@@ -1,8 +1,10 @@
+import {NavLink} from "react-router-dom";
+
 function PageNotFound(){
     return(
         <div>
-            <h2>Oops, we couldn't find any photos</h2>
-            <p>Try something more common, like 'puppy' or 'cheese'!</p>
+            <h2>Oops, that page doesn't exist.</h2>
+            <NavLink to="/">Go back to civilization</NavLink>
         </div>
     )
 }

@@ -27,7 +27,7 @@ class PhotoLogic extends React.Component{
         this.setState({
             loading: true
         })
-        let searchString = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&tags=${query}&content_type=1&privacy_filter=1&safe_search=1&per_page=8&page=1&format=json&nojsoncallback=1`;
+        let searchString = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&tags=${query}&content_type=1&privacy_filter=1&safe_search=1&per_page=16&page=1&format=json&nojsoncallback=1`;
         axios.get(searchString)
             .then(response => {
                 this.setState({
