@@ -1,9 +1,9 @@
-function Photo(props){
-    return(
+export const Photo = (props) => {
+    return (
         <li>
-            <img src={props.src} alt=""/>
+            <img src={`https://live.staticflickr.com/${props.server}/${props.id}_${props.secret}.jpg`} alt=""/>
         </li>
     )
 }
 
-export default Photo;
+export default(Photo);

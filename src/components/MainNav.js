@@ -1,10 +1,12 @@
+import {NavLink} from 'react-router-dom';
+
 function MainNav(){
     return(
         <nav className="main-nav">
             <ul>
-                <li><a href='#'>Cats</a></li>
-                <li><a href='#'>Dogs</a></li>
-                <li><a href='#'>Computers</a></li>
+                <li><NavLink to="/search/teddybear">Teddybears</NavLink></li>
+                <li><NavLink to="/search/elephants">Elephants</NavLink></li>
+                <li><NavLink to="/search/hippos">Hippos</NavLink></li>
             </ul>
         </nav>
     )

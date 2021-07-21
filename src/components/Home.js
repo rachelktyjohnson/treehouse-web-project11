@@ -1,7 +1,3 @@
-import SearchForm from "./SearchForm";
-import Nav from './MainNav';
-import PhotoContainer from "./PhotoContainer";
-
 function Home(){
     return(
         <div>
